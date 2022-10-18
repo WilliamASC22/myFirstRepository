@@ -8,3 +8,10 @@ body {
     height: 100vh;
 }
 
+h1 {
+    font-size: 30px
+}
+
+README.md {
+    font-size: 18px
+}
