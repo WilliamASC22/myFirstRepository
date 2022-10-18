@@ -10,6 +10,10 @@ body {
 
 h1 {
     font-size: 30px
+    color: black;
+    text-align: center;
+    background-color: none;
+    text-decoration: none;
 }
 
 README.md {
