@@ -1,10 +1,27 @@
 console.log(Hi!)
             
             
-    var x = document.getElementById("myLocalDate");
-    var x = document.createElement("INPUT");
-    x.setAttribute("type", "datetime-local");
+var x = document.getElementById("myLocalDate");
+var x = document.createElement("INPUT");
+x.setAttribute("type", "datetime-local");
 
+
+
+  // 2021-03-24 16:48:05.591
+Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+
+  // 2021-03-24 16:48:05.591
+  Date date = new Date();
+Timestamp timestamp2 = new Timestamp(date.getTime());
+
+  // convert Instant to Timestamp
+Timestamp ts = Timestamp.from(Instant.now())
+
+  // convert ZonedDateTime to Instant to Timestamp
+Timestamp ts = Timestamp.from(ZonedDateTime.now().toInstant()));
+
+  // convert Timestamp to Instant
+Instant instant = ts.toInstant();
 
 
 
