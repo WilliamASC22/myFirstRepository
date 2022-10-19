@@ -1,4 +1,14 @@
 console.log(Hi!)
+            
+            
+    var x = document.getElementById("myLocalDate");
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "datetime-local");
+
+
+
+
+
 
 const proxy = "https://nextjs-cors-anywhere.vercel.app/api?endpoint=" // I'm not giving credit lol
 const API_KEY = 'AIzaSyA08wrX3yT82GkulKn3tzGy_nQzFOWUR_4'
