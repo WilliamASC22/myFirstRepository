@@ -27,6 +27,11 @@ Instant instant = ts.toInstant();
 
 
 
+var dt = new Date();
+document.getElementById('date-time').innerHTML=dt;
+
+
+
 const proxy = "https://nextjs-cors-anywhere.vercel.app/api?endpoint=" // I'm not giving credit lol
 const API_KEY = 'AIzaSyA08wrX3yT82GkulKn3tzGy_nQzFOWUR_4'
 let maps = document.querySelector("#map")
