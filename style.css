@@ -20,9 +20,15 @@ README.md {
     font-size: 18px
 }
 
+#big_div {
+    border: 3px solid #ffffff;
+    margin: 30px;
+    padding: 20px;
+}
+
 #toTop {
     border: none;
-    color: #06fff3;
+    color: #0cb30f;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
