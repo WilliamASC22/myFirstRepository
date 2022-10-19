@@ -25,8 +25,9 @@
 
     <input type="datetime-local" id="myLocalDate" value="2014-11-16T15:25:33">
     
-    
-    <p>Current Date and Time is <span id='date-time'></span>.</p>
+    <button onclick="scrollToTop()" class="button" id="dateTime">
+        Current Date and Time <span id='date-time'></span>
+   </button>
     <script>
         var dt = new Date();
         document.getElementById('date-time').innerHTML=dt;
