@@ -36,6 +36,14 @@ README.md {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-self: baseline;
+    
+    position: fixed;
+    top: 0px;
+    right: 0px; 
+    margin: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 50%;
 }
 
 #big_div {
