@@ -24,6 +24,13 @@
     
 
     <input type="datetime-local" id="myLocalDate" value="currentDateandTime()">
+        <script>
+            function currentDateandTime() {
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+                document.body.innerHTML = document.body.innerHTML.replace("Current Date and Time", " ");
+            }
+        </script>
     
         <button onclick="currentDateandTime()" class="button" id="dateTime">
             Current Date and Time  <span id='date-time'></span>
