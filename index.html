@@ -23,12 +23,23 @@
     
     
 
-    <input type="datetime-local" id="myLocalDate" value="currentDateandTime()">
+    <input type="datetime-local" id="myLocalDate" value="currentDateandTime()" >
         <script>
             function currentDateandTime() {
                 var dt = new Date();
-                document.getElementById('date-time').innerHTML=dt;
+                document.getElementById('myLocalDate').innerHTML=dt;
                 document.body.innerHTML = document.body.innerHTML.replace("Current Date and Time", " ");
+            }
+        </script>
+    
+        <button class="button" type="button" data-hover="currentDateandTime()" data-active="I'M ACTIVE" id="dateTimeHover">
+        <span>HOVER EFFECT</span>
+       </button>
+        <script>
+            function currentDateandTime() {
+                var dt = new Date();
+                document.getElementById('dateTimeHover').innerHTML=dt;
+                document.body.innerHTML = document.body.innerHTML.replace("HOVER EFFECT", " ");
             }
         </script>
     
