@@ -34,6 +34,10 @@
     
     
         <script>
+            function changeDef(event){
+                console.log(event.target);
+            }
+            <img class="img-default" src="./img/footer1.png" onmouseover="changeDef(event)">
              // Get a reference to the element that you want to work with
             var img = document.querySelector("img.img-default");
 
