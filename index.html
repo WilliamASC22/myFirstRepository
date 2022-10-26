@@ -60,14 +60,14 @@
     
     
     
-        <button class="button" type="button" data-hover="currentDateandTime()" data-active="I'M ACTIVE" id="dateTimeHover">
-        <span>HOVER EFFECT</span>
+        <button class="button" type="button" data-hover="I'M ON" data-active="I'M ACTIVE" id="dateTimeHover">
+        <span>currentDateandTime()</span>
        </button>
         <script>
             function currentDateandTime() {
                 var dt = new Date();
                 document.getElementById('dateTimeHover').innerHTML=dt;
-                document.body.innerHTML = document.body.innerHTML.replace("currentDateandTime()", "currentDateandTime()");
+                document.body.innerHTML = document.body.innerHTML.replace("I'M ACTIVE", "currentDateandTime()");
             }
         </script>
     
