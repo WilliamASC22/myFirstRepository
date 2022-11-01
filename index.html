@@ -38,13 +38,14 @@
     
     
     
-    <button onmouseover="currentDateandTime()" class="button" id="">
+    <button onmouseover="currentDateandTime()" class="button" id="cDaT">
+            Current Date and Time  <span id='cDaT'></span>
         Current Date and Time
     </button>
         <script>
             function currentDateandTime() {
                 var dt = new Date();
-                document.getElementById('myLocalDate').innerHTML=dt;
+                document.getElementById('cDaT').innerHTML=dt;
                 document.body.innerHTML = document.body.innerHTML.replace("Current Date and Time", " ");
             }
         </script>
