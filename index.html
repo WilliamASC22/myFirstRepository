@@ -23,7 +23,8 @@
     
     
 
-    <input type="datetime-local" id="myLocalDate" value="currentDateandTime()" >
+    
+    <input type="datetime-local" id="myLocalDate" value="2022-10-31T00:00:00" >
         <script>
             function currentDateandTime() {
                 var dt = new Date();
@@ -33,10 +34,13 @@
         </script>
     
     
+
     
     
     
-    <input type="datetime-local" id="myLocalDate" value="2022-10-31T00:00:00" onmouseover="currentDateandTime()">
+    <button onmouseover="currentDateandTime()" class="button" id="">
+        Current Date and Time
+    </button>
         <script>
             function currentDateandTime() {
                 var dt = new Date();
