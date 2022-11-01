@@ -33,6 +33,18 @@
         </script>
     
     
+    
+    
+    
+    <input type="datetime-local" id="myLocalDate" value="2022-10-31T00:00:00" onmouseover="currentDateandTime()">
+        <script>
+            function currentDateandTime() {
+                var dt = new Date();
+                document.getElementById('myLocalDate').innerHTML=dt;
+                document.body.innerHTML = document.body.innerHTML.replace("Current Date and Time", " ");
+            }
+        </script>
+    
         <script>
             function changeDef(event){
                 console.log(event.target);
