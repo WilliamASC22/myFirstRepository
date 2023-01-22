@@ -14,6 +14,14 @@
 </head>
 
 <body>
+
+    <header>
+        <img src="images/book.jpg"/>
+        <p>
+            Hi!
+        </p>
+    </header>
+
     <h1>My First Respository<p id= "WebName"></h1>
     
     <h2>Welcome to my First Respository</h2>
@@ -40,17 +48,54 @@
         }
     </script>
     
-    <form role="search" id="form">
-        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-        <button class ="SearchButton" id="SearchButton" >
-          <svg  viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-        </button>
-    </form>
+    <button onclick="currentDateandTime()" class="button" id="dateTime">
+        Date/Time  <span id='date-time'></span>
+    </button>
+        <script>
+            function currentDateandTime() {
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+                document.body.innerHTML = document.body.innerHTML.replace("Date/Time", " ");
+            }
+        </script>
+    
+     <div id="DateTime">
+        <div>
+            <p>
+                Current Date and Time
+            </p>
+        </div>
+        <div id="currentDate">
+            <p>
+                <script>
+                    document.write(new Date().toLocaleDateString()); 
+                </script>
+            </p>
+        </div>
+        
+        <div id="currentTime">
+
+            <script>
+                const element = document.getElementById('currentTime');
+                
+                setInterval(function () {
+                    const currentDate = new Date();
+                    element.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+                }, 1000);
+            </script>
+        </div>
+    </div>
+
+    <div>
         <p>
             Look at the settings of this Respository. Go to the pages tab. That is how to make a free website on github
 
         </p>
     </div>
+    
+
+    <img src="images/you_funny.gif">
+
     
 
 </body>

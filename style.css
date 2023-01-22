@@ -38,42 +38,52 @@ README.md {
     font-size: 18px
 }
 
-#form {
-    background-color: #4654e1;
-    width: 300px;
-    height: 44px;
-    border-radius: 5px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+#DateTime {
+    border: none;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 30px 20px;
     overflow: hidden;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: baseline;
 
-  #query {
-    all: unset;
-    font: 16px system-ui;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  }
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    margin: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 25%;
+}
 
-  ::placeholder {
-    color: #fff;
-    opacity: 0.7; 
-  }
-
-  .path1 {
-    color: #fff;
-    fill: currentColor;
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-  }
-
-  .SearchButton {
-    all: unset;
+#dateTime {
+    border: none;
+    color: #06fff3;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font: italic;
+    margin: 30px 20px;
     cursor: pointer;
-    width: 44px;
-    height: 44px;
-  }
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-self: baseline;
+    
+    position: fixed;
+    bottom: 0px;
+    left: 0px; 
+    margin: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 25%;
+}
