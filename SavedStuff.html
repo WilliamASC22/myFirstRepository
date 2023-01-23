@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SavedStuff.css">
+    <script src="SavedStuff.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+    <title>Art</title>
+</head>
+
+<body>
+
+
+    <div id="SlideBox">
+        <div class="carousel-container">
+            <div class="images fade">
+                <img src="images/book.jpg">
+                </div>
+                <div class="images fade">
+                    <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg">
+                </div>
+                <div class="images fade">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg">
+                </div>
+                
+                <!-- Previous and Next Buttons -->
+                <a class="previous" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        
+        <!-- Navigation Dots-->
+        <div style="text-align:center">
+            <span class="navigation-dot" onclick="currentSlide(1)"></span>
+            <span class="navigation-dot" onclick="currentSlide(2)"></span>
+            <span class="navigation-dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+</body>
+</html>

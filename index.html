@@ -89,14 +89,149 @@
     <div>
         <p>
             Look at the settings of this Respository. Go to the pages tab. That is how to make a free website on github
-
         </p>
+
+        <div class="big_div" id="Favorite Color">
+            <p class="main_idea">Art</p>
+            <div class="sub_div">
+                <p>William has read many books. His favorites are Hatchet, Holes, The Long Walk, Nineteen Eighty-Four, James and the Giant Peach, The Last Mission, The Outsiders, Red Badge of Courage, Rich Dad Poor Dad, The Watch, The Passage, One Shot, and Fight Club.</p>
+                
+                <div id="SlideBox">
+                    <!-- Container for the image gallery -->
+                    <div class="container">
+        
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                    <div class="numbertext">1 / 2</div>
+                        <img src="images/book.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 2</div>
+                            <img src="images/you_funny.gif" style="width:100%">
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="images/book.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/you_funny.gif" style="width:100%" onclick="currentSlide(2)" alt="Your Funny">
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    
+        
+        
+        </div>
+
     </div>
     
 
     <img src="images/you_funny.gif">
 
     
+
+
+
+
+
+
+    
+        
+
+    
+    <!--Slider-->
+  <div id="slider">
+    <div class="slide" style="background:dodgerBlue;">
+      <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" >
+    </div>
+
+    <div class="slide" style="background:coral;">
+       <img src="https://wallpapercave.com/wp/wp2634222.jpg" >
+    </div>
+
+    <div class="slide" style="background:crimson;">
+      <img src="https://wallpaperaccess.com/full/1154341.jpg" >
+    </div>
+
+    <div class="slide" style="background: #6edf10;">
+      <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" >
+    </div>
+
+    <!--Controlling arrows-->
+    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </span>
+    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </span>
+  </div>
+    <div id="dots-con">
+   <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+   </div>
+
+
+<script type="text/javascript">
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var index = 0;
+
+
+function prevSlide(n){
+  index+=n;
+  console.log("prevSlide is called");
+  changeSlide();
+}
+
+function nextSlide(n){
+  index+=n;
+  changeSlide();
+}
+
+changeSlide();
+
+function changeSlide(){
+
+  if(index>slides.length-1)
+    index=0;
+
+  if(index<0)
+    index=slides.length-1;
+
+
+
+    for(let i=0;i<slides.length;i++){
+      slides[i].style.display = "none";
+
+      dots[i].classList.remove("active");
+
+
+    }
+
+    slides[index].style.display = "block";
+    dots[index].classList.add("active");
+
+
+
+}
+
+
+
+</script>
+
+
+
 
 </body>
 </html>
