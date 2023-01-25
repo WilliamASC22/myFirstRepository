@@ -1,0 +1,238 @@
+body {
+    background-color: #96b3b2;
+    color: white;
+    font-family: Helveticalalala;
+    font-size: 22px;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    color: white;
+    text-align: center;
+    background-color: none;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+/* Add a black background color and flexbox to the top navigation bar*/
+.topnav {
+    background-color: #96b3b2;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: baseline;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: gray;
+    color: white;
+    border: 0px solid white;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+#big_div {
+    border: 3px solid #ffffff;
+    margin: 30px;
+    padding: 20px;
+}
+
+.main_idea {
+    text-align: center;
+    font-size: 150;
+    font: bold;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+}
+
+.sub_div {
+    display: flex;
+    padding: 15px;
+    border: 2px white solid;
+    border-radius: 25px;
+    background-color: grey;
+    color: white
+}
+
+img {
+    width: 250;
+    padding-right: 50px;
+}
+
+footer {
+    position:static;
+    bottom: 0px;
+    text-align: center;
+}
+
+.link {
+    color: white;
+}
+
+#toTop {
+    border: none;
+    color: #96b3b2;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 30px 20px;
+    cursor: pointer;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-self: baseline;
+
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 50%;
+}
+
+#form {
+    background-color: #4654e1;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    overflow: hidden;
+  }
+
+  #query {
+    all: unset;
+    font: 16px system-ui;
+    color: #333;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+  ::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 0.7; 
+  }
+
+  .path1 {
+    color: #333;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+
+  .SearchButton {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+
+.container {
+    height: 100%;
+  }
+ .bg {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+ }
+
+/* Adding image to each div  
+  Use https://www.linkpicture.com/en/?set=en*/
+  .image1 {
+    background-image: url("https://www.linkpicture.com/q/nature1.jpg");
+  }
+  .image2 {
+    background-image: url("https://www.linkpicture.com/q/nature2_1.jpg");
+  }
+
+  .image3 {
+    background-image: url("https://www.linkpicture.com/q/nature3_1.jpg");
+  }
+
+  .image4 {
+    background-image: url("https://www.linkpicture.com/q/nature4.jpg");
+  }
+
+  .image5 {
+    background-image: url("https://www.linkpicture.com/q/nature3_1.jpg");
+  }
+
+  .image6 {
+    background-image: url("https://www.linkpicture.com/q/nature4.jpg");
+  }
+
+
+
+
+
+  html{
+    scroll-behavior: smooth;
+}
+
+  #randomizer {
+    border: none;
+    color: #06fff3;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 30px 20px;
+    cursor: pointer;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-self: baseline;
+}
+.person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px green;
+  }
+

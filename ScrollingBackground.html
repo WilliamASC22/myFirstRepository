@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ScrollingBackground.css">
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+    <title>Art</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+		<header>
+			<p>
+				William's Website
+			</p>
+		</header>
+		
+		<div class="topnav">
+			<div><a href="index.html">Home</a></div>
+			<div><a href="GitHub.html">GitHub</a></div>
+			<div><a href="School.html">School</a></div>
+			<div><a href="Hobbies.html">Hobbies</a></div>
+			<div><a href="Travel.html">Travel</a></div>
+			<div><a href="Favorite_Color.html">Favorite Color</a></div>
+			<div><a href="Books.html">Books</a></div>
+			<div><a href="Art.html">Art</a></div>
+			<div><a href="Search.html">Google Search</a></div>
+		</div>
+		
+		<div class="bg image3"></div>
+		<div class="big_div" id="Art">
+			<p class="main_idea">Art</p>
+			<div class="sub_div">
+				<p></p>
+					William has created many art work, some of which are portrayed. The first is named "Coastal". The second is named "Infinite Box". The third is named "Autumn Leaf". The fourth is named "Light Speed". The fifth is named "Trap". The sixth is named "Infinite Triangle". The seventh is named "Childhood Memories".  
+				</p>
+	
+				<div id="SlideBox">
+					<div class="carousel-container">
+						<div class="images fade">
+							<img src="images/drawing_1.jpg">
+						</div>
+			
+						<div class="images fade">
+							<img src="images/drawing_2.jpg">
+						</div>
+			
+						<div class="images fade">
+							<img src="images/drawing_3.jpg">
+						</div>
+			
+						<div class="images fade">
+							<img src="images/drawing_4.jpg">
+						</div>
+			
+						<div class="images fade">
+							<img src="images/drawing_5.jpg">
+						</div>
+			
+						<div class="images fade">
+							<img src="images/drawing_6.jpg">
+						</div>
+			
+						<div class="images fade">
+							<img src="images/drawing_7.jpg">
+						</div>
+			
+							<!-- Previous and Next Buttons -->
+							<a class="previous" onclick="plusSlides(-1)">❮</a>
+							<a class="next" onclick="plusSlides(1)">❯</a>
+					</div>
+					<br>
+					
+					<!-- Navigation Dots-->
+					<div style="text-align:center">
+						<span class="navigation-dot" onclick="currentSlide(1)"></span>
+						<span class="navigation-dot" onclick="currentSlide(2)"></span>
+						<span class="navigation-dot" onclick="currentSlide(3)"></span>
+						<span class="navigation-dot" onclick="currentSlide(4)"></span>
+						<span class="navigation-dot" onclick="currentSlide(5)"></span>
+						<span class="navigation-dot" onclick="currentSlide(6)"></span>
+						<span class="navigation-dot" onclick="currentSlide(7)"></span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+		<div class="bg image4"></div>
+
+		
+		<div class="big_div">
+			<footer>
+				<div>
+					<p>
+						Want to get in touch with William? Email William at <a href="mailto:wbhuiyan@stu.allstarcode.org" class="link">wbhuiyan@stu.allstarcode.org</a>
+					</p>
+				</div>
+				<div>
+					<p>
+						Music provided by Rujay.
+						Instrumental: "Crazy Story" by Young Gotti.
+						Channel: <a href="https://YouTube.com/user/RujayTV." class="link">https://YouTube.com/user/RujayTV.</a>
+					</p>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+    <embed src="sounds/Rujay_1410 _Legendary.mp3" loop="true" autostart="true" width="2" height="0"></embed>
+
+	<button onclick="scrollToTop()" class="button" id="toTop">
+        Scroll To Top
+    </button>
+      <script>
+          function scrollToTop() {
+              window.scrollTo(30, 0);
+          }
+      </script>
+
+</body>
+</html>
